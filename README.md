@@ -1,349 +1,169 @@
-# Fractal Horizons Landing
-
-Crie uma landing page moderna, premium e altamente focada em conversão para a empresa Horizonte Fractal, especializada em desenvolvimento de software, automação, inteligência artificial, landing pages comerciais, websites corporativos, aplicativos e soluções digitais sob medida.
-
-Utilize como inspiração de estrutura e experiência do usuário os seguintes projetos:
-
- Site 1: https://fjavier777.github.io/moving-company-site/
-
- Site 2: https://lingering-bar-71b4.fernando-aracenabello.workers.dev/
-
-A nova landing deve ser visualmente superior aos dois exemplos, com aparência de empresa de tecnologia de alto padrão.
-
-Identidade da Marca
-
-Nome:
-Horizonte Fractal
-
-Slogan:
-"Transformando ideias em sistemas que escalam."
-
-Slogan alternativo:
-"Tecnologia inteligente para empresas que querem crescer sem limites."
-
-Inserir o logotipo fornecido pelo usuário como elemento central da identidade visual.
-
-Conceito da Marca
-
-O horizonte representa visão de futuro.
-
-O fractal representa crescimento contínuo, inovação, escalabilidade e evolução.
-
-Toda a identidade visual deve transmitir:
-
- inovação
-
- inteligência
-
- confiança
-
- crescimento
-
- tecnologia avançada
-
- transformação digital
-
-Estilo Visual
-
-Visual inspirado em:
-
- Stripe
-
- Linear
-
- Vercel
-
- Framer
-
- Notion
-
- OpenAI
-
-Características:
-
- design minimalista premium
-
- muito espaço em branco
-
- tipografia moderna
-
- micro animações suaves
-
- glassmorphism discreto
-
- gradientes sofisticados
-
- sombras suaves
-
- efeitos de iluminação sutis
-
- aparência corporativa de alto valor
-
-Paleta baseada no logotipo:
-
- Azul profundo
-
- Roxo
-
- Magenta
-
- Laranja
-
- Amarelo dourado
-
-Utilizar gradientes inspirados no pôr do sol do logotipo.
-
-Hero Section
-
-Headline principal:
-
-Tecnologia que acelera o crescimento da sua empresa
-
-Subheadline:
-
-Criamos sites, sistemas, automações e soluções com inteligência artificial para empresas que desejam vender mais, reduzir custos e escalar operações.
-
-Botões CTA:
-
- Solicitar Orçamento
-
- Falar no WhatsApp
-
-Adicionar:
-
- selo "Atendimento rápido"
-
- selo "Soluções sob medida"
-
- selo "Tecnologia de ponta"
-
-Exibir mockups modernos de:
-
- dashboards
-
- aplicativos
-
- analytics
-
- automação de processos
-
-Seção Serviços
-
-Criar cards premium para:
-
-Landing Pages
-
-Páginas desenvolvidas para converter visitantes em clientes.
-
-Sites Corporativos
-
-Presença digital profissional para empresas modernas.
-
-Sistemas Web
-
-Soluções sob medida para automatizar processos.
-
-Aplicativos
-
-Apps Android, iOS e multiplataforma.
-
-Inteligência Artificial
-
-Chatbots, agentes de IA e automações inteligentes.
-
-Consultoria Tecnológica
-
-Planejamento digital para acelerar resultados.
-
-Seção Diferenciais
-
-Título:
-
-Por que escolher a Horizonte Fractal?
-
-Criar ícones modernos para:
-
- Desenvolvimento sob medida
-
- Atendimento próximo
-
- Design premium
-
- Alta performance
-
- SEO otimizado
-
- Segurança e confiabilidade
-
- Escalabilidade
-
- Integração com IA
-
-Seção Processo
-
-Título:
-
-Como transformamos sua ideia em resultado
-
-Passo 1:
-Descoberta e Planejamento
-
-Passo 2:
-Design e Prototipação
-
-Passo 3:
-Desenvolvimento
-
-Passo 4:
-Lançamento
-
-Passo 5:
-Suporte e Evolução
-
-Criar timeline visual elegante.
-
-Seção Resultados
-
-Exibir métricas animadas:
-
-+50 Projetos Entregues
-
-+95% Clientes Satisfeitos
-
-Até 300% Mais Conversão
-
-Redução de até 70% em tarefas manuais
-
-Seção Tecnologias
-
-Exibir logos ou ícones modernos de:
-
- HTML5
-
- CSS3
-
- JavaScript
-
- React
-
- Next.js
-
- Node.js
-
- Python
-
- AWS
-
- Docker
-
- PostgreSQL
-
- OpenAI
-
- Gemini
-
-Layout em carrossel animado.
-
-Depoimentos
-
-Criar 3 depoimentos fictícios realistas com aparência premium.
-
-Destacar:
-
- profissionalismo
-
- rapidez
-
- qualidade
-
- retorno sobre investimento
-
-CTA Final
-
-Headline:
-
-Pronto para levar sua empresa ao próximo nível?
-
-Texto:
-
-Solicite uma análise gratuita e descubra como a tecnologia pode acelerar seus resultados.
-
-Botões:
-
- Solicitar Orçamento
-
- Conversar no WhatsApp
-
-Rodapé
-
-Exibir:
-
-Horizonte Fractal
-
-Transformando ideias em sistemas que escalam.
-
-Links:
-
- Serviços
-
- Portfólio
-
- Contato
-
- WhatsApp
-
-Ícones sociais:
-
- LinkedIn
-
- Instagram
-
- GitHub
-
-Requisitos Técnicos
-
- HTML5 semântico
-
- CSS moderno
-
- JavaScript puro
-
- Responsivo para desktop, tablet e mobile
-
- SEO otimizado
-
- Performance acima de 90 no Lighthouse
-
- Animações suaves
-
- Lazy loading de imagens
-
- Acessibilidade WCAG
-
- Estrutura preparada para futuras integrações com CRM e WhatsApp
-
-Objetivo principal:
-Gerar contatos comerciais e transmitir a imagem de uma empresa de tecnologia premium, moderna e altamente confiável.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://fractal-growth-engine.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/286f824b-afc0-47d3-94e6-0578caf6bf4b).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+# Horizonte Fractal — Site institucional
+
+Repositório da aplicação web institucional da **Horizonte Fractal**, empresa de tecnologia que desenvolve soluções digitais para negócios.
+
+O projeto reúne a página institucional da empresa e uma área comercial dedicada à apresentação de modelos de sites profissionais para advocacia.
+
+- **Repositório:** https://github.com/HorizonteFractal/fractal-horizons-landing
+- **Aplicação publicada:** https://fractal-growth-engine.lovable.app
+- **Projeto no Lovable:** https://lovable.dev/projects/286f824b-afc0-47d3-94e6-0578caf6bf4b
+
+> O projeto está conectado diretamente ao Lovable. Preserve essa integração e trabalhe neste repositório como fonte de código do projeto.
+
+## Visão geral
+
+A aplicação apresenta a Horizonte Fractal e seus serviços de tecnologia, com foco em geração de contatos comerciais. A página institucional reúne conteúdo sobre serviços, abordagem de trabalho, diferenciais, processo, tecnologias, projetos, prova social, planos de suporte e canais de contato.
+
+A rota comercial /sites apresenta soluções de presença digital voltadas a advogados e escritórios de advocacia, incluindo modelos demonstrativos, chamadas para contato e atalhos para WhatsApp e Instagram.
+
+## Rotas
+
+| Rota | Finalidade | Implementação |
+| --- | --- | --- |
+| / | Página institucional da Horizonte Fractal | src/routes/index.tsx |
+| /sites | Página comercial de sites para advocacia | src/routes/sites.tsx |
+
+O roteamento é baseado em arquivos, por meio do **TanStack Router**. A estrutura raiz da aplicação está em src/routes/__root.tsx.
+
+## Arquitetura e organização
+
+A separação entre a experiência institucional e a área comercial é uma regra importante do projeto.
+
+```text
+.
+├── .github/                 # Configurações e arquivos da organização, quando aplicável
+├── .lovable/                # Metadados e contexto mantidos pelo Lovable
+├── public/                  # Arquivos estáticos públicos
+├── src/
+│   ├── assets/              # Recursos visuais importados pela aplicação
+│   ├── components/
+│   │   ├── landing/         # Componentes da página institucional
+│   │   ├── commercial/      # Componentes isolados da página /sites
+│   │   └── ui/              # Primitivos e componentes de interface
+│   ├── hooks/               # Hooks reutilizáveis
+│   ├── lib/                 # Utilitários e configurações compartilhadas
+│   │   └── commercial-sites.ts
+│   ├── routes/              # Rotas do TanStack Router
+│   ├── routeTree.gen.ts     # Arquivo de rotas gerado automaticamente
+│   ├── router.tsx           # Configuração do roteador
+│   ├── server.ts            # Entrada e tratamento do servidor
+│   ├── start.ts             # Inicialização do TanStack Start
+│   └── styles.css           # Estilos globais
+├── AGENTS.md                # Regras de arquitetura para agentes de desenvolvimento
+├── roadmap.md               # Planejamento e histórico de entregas da área comercial
+├── package.json             # Scripts e dependências
+├── bun.lock                 # Lockfile do Bun
+├── bunfig.toml              # Configuração do Bun
+├── vite.config.ts           # Configuração do Vite/TanStack Start
+└── vercel.json              # Regras de rewrite para a implantação na Vercel
 ```
+
+### Separação institucional e comercial
+
+- A página institucional permanece em src/routes/index.tsx e utiliza os componentes de src/components/landing/.
+- A página comercial permanece em src/routes/sites.tsx e utiliza os componentes de src/components/commercial/.
+- Elementos visuais, navegação e conteúdo específicos da área comercial devem permanecer isolados, evitando alterações involuntárias na experiência institucional.
+- Os endereços das demonstrações comerciais e os contatos dessa área são centralizados em src/lib/commercial-sites.ts.
+- O arquivo AGENTS.md contém as regras arquiteturais que devem ser consultadas antes de mudanças nessas áreas.
+
+**Não mova a rota comercial para dentro da página institucional nem compartilhe alterações específicas de sua interface sem avaliar o impacto nas duas experiências.**
+
+## Tecnologias
+
+A implementação atual utiliza:
+
+- **React 19** — construção da interface.
+- **TypeScript** — tipagem estática.
+- **TanStack Start** — estrutura da aplicação e renderização no servidor.
+- **TanStack Router** — roteamento baseado em arquivos.
+- **TanStack Query** — gerenciamento de estado assíncrono e cache de consultas.
+- **Vite** — ambiente de desenvolvimento e build.
+- **Tailwind CSS 4** — estilos utilitários.
+- **Radix UI** — primitivas acessíveis de interface.
+- **Lucide React** — ícones.
+- **Recharts** — visualização de dados.
+- **Zod** — validação de dados.
+- **Bun** — gerenciamento de dependências e execução dos scripts.
+
+As versões e dependências efetivas estão declaradas em package.json e bun.lock.
+
+## Executar localmente
+
+### Pré-requisitos
+
+- Git
+- Bun instalado
+
+### Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/HorizonteFractal/fractal-horizons-landing.git
+cd fractal-horizons-landing
+bun install
+```
+
+Inicie o ambiente de desenvolvimento:
+
+```bash
+bun run dev
+```
+
+O Vite exibirá no terminal o endereço local para acessar a aplicação.
+
+### Scripts disponíveis
+
+| Comando | Finalidade |
+| --- | --- |
+| bun run dev | Inicia o servidor de desenvolvimento |
+| bun run build | Gera o build de produção |
+| bun run build:dev | Gera o build no modo development |
+| bun run preview | Executa a prévia local do build |
+| bun run lint | Executa o ESLint |
+| bun run format | Formata os arquivos com Prettier |
+
+## Configurações importantes
+
+### Demonstrações comerciais
+
+Os endereços dos modelos demonstrativos da área de advocacia estão centralizados em:
+
+src/lib/commercial-sites.ts
+
+Quando os endereços definitivos forem disponibilizados, atualize os valores nesse arquivo. Evite duplicar URLs diretamente nos componentes.
+
+### Contatos comerciais
+
+A configuração de WhatsApp e Instagram usada pela área comercial também está centralizada em src/lib/commercial-sites.ts. A configuração de contato da página institucional pode estar em componentes ou utilitários próprios; verifique a implementação antes de alterar números ou mensagens.
+
+### Lovable
+
+O projeto mantém arquivos de contexto em .lovable/. Eles fazem parte da integração e do fluxo de trabalho do projeto.
+
+- Não remova nem substitua arquivos de .lovable/ sem necessidade confirmada.
+- Continue utilizando o projeto Lovable já conectado a este repositório.
+- Alterações sincronizadas pelo Lovable devem ser consideradas parte do histórico normal do código.
+
+### Implantação
+
+O repositório contém configuração de build baseada em Vite/TanStack Start e um arquivo vercel.json com regras de rewrite relacionadas à rota /sites. A configuração efetiva de produção deve ser conferida no ambiente de implantação antes de qualquer alteração de hospedagem ou roteamento.
+
+## Diretrizes para manutenção
+
+1. Consulte AGENTS.md antes de modificar a arquitetura.
+2. Preserve a separação entre a página institucional e a área comercial.
+3. Centralize as URLs das demonstrações comerciais em src/lib/commercial-sites.ts.
+4. Não edite manualmente src/routeTree.gen.ts; o arquivo é gerado pelo sistema de rotas.
+5. Preserve os arquivos de integração do Lovable.
+6. Atualize roadmap.md somente quando houver mudança real no planejamento ou no estado das entregas.
+7. Execute ao menos bun run lint e bun run build após alterações relevantes, quando o ambiente permitir.
+
+## Planejamento
+
+O arquivo roadmap.md registra as entregas e pendências da área comercial. Ele deve ser consultado para compreender o histórico do trabalho, sem ser tratado como substituto da implementação atual.
+
+---
+
+**Horizonte Fractal**  
+Tecnologia, inteligência e soluções digitais para negócios.
