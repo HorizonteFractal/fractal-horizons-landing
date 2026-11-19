@@ -33,7 +33,6 @@ A separação entre a experiência institucional e a área comercial é uma regr
 
 ```text
 .
-├── .github/                 # Configurações e arquivos institucionais da organização (quando aplicável)
 ├── .lovable/                # Metadados e contexto mantidos pelo Lovable
 ├── public/                  # Arquivos estáticos públicos
 ├── src/
