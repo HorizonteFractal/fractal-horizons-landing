@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ESSENCIAL_SITE_URL, PROFISSIONAL_SITE_URL } from "@/lib/commercial-sites";
 import { CommercialContact, CommercialHeader, CommercialFooter } from "./CommercialChrome";
+import { CommercialShowcase } from "./CommercialShowcase";
 import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
 import { COMMERCIAL_WHATSAPP_URL } from "@/lib/commercial-sites";
 
@@ -24,9 +25,9 @@ function CommercialHero() {
     <section id="inicio" className="relative pb-16 pt-36 md:pb-24 md:pt-40">
       <div className={`${container} text-center`}>
         <img src="/horizonte-fractal-logo.png" alt="" aria-hidden="true" width={160} height={160} fetchPriority="high" decoding="async" className="mx-auto h-32 w-32 rounded-xl md:h-40 md:w-40" />
-        <p className="mx-auto mt-3 max-w-4xl font-display text-5xl font-bold tracking-normal text-foreground sm:text-6xl md:text-7xl">Horizonte <span className="text-gradient">Fractal</span></p>
+        <p className="mx-auto mt-3 max-w-4xl font-display text-5xl font-bold tracking-normal text-foreground max-[340px]:text-4xl sm:text-6xl md:text-7xl">Horizonte <span className="text-gradient">Fractal</span></p>
         <Eyebrow>SITES PROFISSIONAIS PARA ADVOGADOS E ESCRITÓRIOS</Eyebrow>
-        <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl">Sites profissionais para <span className="text-gradient">advogados e escritórios.</span></h1>
+        <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-bold tracking-normal max-[340px]:text-4xl sm:text-6xl md:text-7xl">Sites profissionais para <span className="text-gradient">advogados e escritórios.</span></h1>
         <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg">Criamos sites rápidos, elegantes e estratégicos para advogados e escritórios que querem transformar sua presença digital em novas oportunidades.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3"><CommercialContact /><ProductAnchor /></div>
       </div>
@@ -78,8 +79,9 @@ function ProductCard({ product }: { product: typeof products[number] }) {
 function LawyerSitesSection() {
   return (
     <section id="sites-advogados" className={`${section} border-y border-border/60`} aria-labelledby="products-title"><div className={container}>
-      <div className="mx-auto max-w-3xl text-center"><Eyebrow>PRODUTOS EM DESTAQUE</Eyebrow><h2 id="products-title" className={heading}>Sites profissionais para <span className="text-gradient">advogados e escritórios</span></h2><p className="mt-5 text-muted-foreground">Modelos desenvolvidos para profissionais jurídicos que querem apresentar seus serviços com mais autoridade, clareza e profissionalismo na internet.</p></div>
+      <div className="mx-auto max-w-3xl text-center"><Eyebrow>PRODUTOS EM DESTAQUE</Eyebrow><h2 id="products-title" className={heading}>Sites profissionais para <span className="text-gradient">advogados e escritórios</span></h2><p className="mt-5 text-muted-foreground">Modelos desenvolvidos para profissionais jurídicos que querem apresentar seus serviços com mais autoridade, clareza e profissionalismo na internet.</p><Button asChild variant="link" className="mt-3 h-auto whitespace-normal px-0"><a href="#showcase">Explorar demonstrações<ArrowRight aria-hidden="true" /></a></Button></div>
       <div className="mt-14 grid gap-6 md:grid-cols-2">{products.map((product) => <ProductCard key={product.name} product={product} />)}</div>
+      <CommercialShowcase />
     </div></section>
   );
 }
@@ -157,5 +159,5 @@ function FinalCTA() {
 }
 
 export function CommercialLanding() {
-  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ConditionsSection /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></>;
+  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ConditionsSection /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /><div className="max-sm:[&_span]:animate-none motion-reduce:[&_span]:animate-none"><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></div></>;
 }

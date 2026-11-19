@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle, ArrowUp, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { COMMERCIAL_INSTAGRAM_URL, COMMERCIAL_WHATSAPP_URL } from "@/lib/commercial-sites";
+import { COMMERCIAL_INSTAGRAM_URL, COMMERCIAL_WHATSAPP_URL, getCommercialWhatsAppUrl } from "@/lib/commercial-sites";
 
 const links = [
   { label: "Início", href: "#inicio" },
@@ -11,10 +11,10 @@ const links = [
   { label: "Contato", href: "#contato" },
 ];
 
-export function CommercialContact({ children = "Quero meu site", className = "" }: { children?: React.ReactNode; className?: string }) {
+export function CommercialContact({ children = "Quero meu site", className = "", model }: { children?: React.ReactNode; className?: string; model?: string }) {
   return (
     <Button asChild className={`h-auto rounded-full bg-sunset px-6 py-3 text-sm font-semibold shadow-soft hover:-translate-y-0.5 ${className}`}>
-      <a href={COMMERCIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+      <a href={getCommercialWhatsAppUrl(model)} target="_blank" rel="noopener noreferrer">
         <MessageCircle aria-hidden="true" />{children}
       </a>
     </Button>
