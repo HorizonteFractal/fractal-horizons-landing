@@ -4,3 +4,4 @@
 - Use existing UI primitives and landing utilities for commercial controls and surfaces; local header/footer variants keep commercial navigation and copy isolated from the institutional page.
 - Type route error boundaries with the router's `ErrorComponentProps`; framework errors are unknown and the canonical type preserves compatibility without runtime changes.
 - Embed the commercial demos from their canonical URLs in sandboxed frames; size the viewport before scaling so the previews show the actual responsive layouts without duplicating demo content.
+- Keep quote requests private: validate with a shared schema and persist through a server-only insert before navigating to WhatsApp.

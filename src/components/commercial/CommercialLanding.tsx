@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ArrowRight, Check, ShieldCheck, Eye, MessageCircle, Monitor, Smartphone, Zap, Minus, Clock, FileText, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -5,8 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { ESSENCIAL_SITE_URL, PROFISSIONAL_SITE_URL } from "@/lib/commercial-sites";
 import { CommercialContact, CommercialHeader, CommercialFooter } from "./CommercialChrome";
 import { CommercialShowcase } from "./CommercialShowcase";
+import { CommercialQuoteForm } from "./CommercialQuoteForm";
 import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
 import { COMMERCIAL_WHATSAPP_URL } from "@/lib/commercial-sites";
+import type { QuoteModel } from "@/lib/commercial-quote";
 
 const container = "mx-auto max-w-6xl px-6";
 const section = "py-24 md:py-32";
@@ -76,12 +79,12 @@ function ProductCard({ product }: { product: typeof products[number] }) {
   );
 }
 
-function LawyerSitesSection() {
+function LawyerSitesSection({ onSelectModel }: { onSelectModel: (model: QuoteModel) => void }) {
   return (
     <section id="sites-advogados" className={`${section} border-y border-border/60`} aria-labelledby="products-title"><div className={container}>
       <div className="mx-auto max-w-3xl text-center"><Eyebrow>PRODUTOS EM DESTAQUE</Eyebrow><h2 id="products-title" className={heading}>Sites profissionais para <span className="text-gradient">advogados e escritórios</span></h2><p className="mt-5 text-muted-foreground">Modelos desenvolvidos para profissionais jurídicos que querem apresentar seus serviços com mais autoridade, clareza e profissionalismo na internet.</p><Button asChild variant="link" className="mt-3 h-auto whitespace-normal px-0"><a href="#showcase">Explorar demonstrações<ArrowRight aria-hidden="true" /></a></Button></div>
       <div className="mt-14 grid gap-6 md:grid-cols-2">{products.map((product) => <ProductCard key={product.name} product={product} />)}</div>
-      <CommercialShowcase />
+      <CommercialShowcase onSelectModel={onSelectModel} />
     </div></section>
   );
 }
@@ -154,10 +157,11 @@ function AboutSection() {
   return <section id="sobre" className={`${section} border-y border-border/60`} aria-labelledby="about-title"><div className={`${container} text-center`}><h2 id="about-title" className={heading}>Tecnologia aplicada ao crescimento.</h2><div className="mx-auto mt-6 max-w-3xl text-muted-foreground"><p>A Horizonte Fractal desenvolve experiências digitais para empresas e profissionais que querem transformar sua presença online em uma ferramenta de negócio.</p><p className="mt-4">Unimos design, tecnologia e estratégia para criar soluções digitais objetivas, profissionais e preparadas para crescer junto com o cliente.</p></div></div></section>;
 }
 
-function FinalCTA() {
-  return <section id="contato" className={section} aria-labelledby="contact-title"><div className={`${container} text-center`}><Eyebrow>PRONTO PARA COMEÇAR?</Eyebrow><h2 id="contact-title" className={`${heading} mx-auto max-w-3xl`}>Seu próximo cliente pode <span className="text-gradient">começar pelo seu site.</span></h2><p className="mx-auto mt-5 max-w-2xl text-muted-foreground">Escolha o modelo ideal para seu negócio ou fale conosco para descobrir qual estrutura faz mais sentido para você.</p><div className="mt-8 flex flex-wrap justify-center gap-3"><CommercialContact /><ProductAnchor /></div></div></section>;
+function FinalCTA({ model, onModelChange }: { model: QuoteModel | ""; onModelChange: (model: QuoteModel | "") => void }) {
+  return <section id="contato" className={section} aria-labelledby="contact-title"><div className={`${container} text-center`}><Eyebrow>PRONTO PARA COMEÇAR?</Eyebrow><h2 id="contact-title" className={`${heading} mx-auto max-w-3xl`}>Solicite seu <span className="text-gradient">orçamento</span></h2><CommercialQuoteForm model={model} onModelChange={onModelChange} /></div></section>;
 }
 
 export function CommercialLanding() {
-  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ConditionsSection /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /><div className="max-sm:[&_span]:animate-none motion-reduce:[&_span]:animate-none"><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></div></>;
+  const [model, setModel] = useState<QuoteModel | "">("");
+  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection onSelectModel={setModel} /><ProductComparison /><ConditionsSection /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA model={model} onModelChange={setModel} /></main><CommercialFooter /><div className="max-sm:[&_span]:animate-none motion-reduce:[&_span]:animate-none"><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></div></>;
 }

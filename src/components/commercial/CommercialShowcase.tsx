@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { ESSENCIAL_SITE_URL, PROFISSIONAL_SITE_URL } from "@/lib/commercial-sites";
+import { QUOTE_MODELS, type QuoteModel } from "@/lib/commercial-quote";
 import { CommercialContact } from "./CommercialChrome";
 
 const models = [
   {
     id: "essencial",
     label: "Essencial",
+    quoteModel: QUOTE_MODELS[0],
     url: ESSENCIAL_SITE_URL,
     audience: "Para advogados autônomos",
     description: "Uma apresentação direta do advogado, das áreas de atuação e das etapas do atendimento.",
@@ -23,6 +25,7 @@ const models = [
   {
     id: "profissional",
     label: "Profissional",
+    quoteModel: QUOTE_MODELS[1],
     url: PROFISSIONAL_SITE_URL,
     audience: "Para advogados e escritórios",
     description: "Uma presença institucional mais completa, com espaço para a equipe, perguntas frequentes e conteúdo jurídico.",
@@ -83,7 +86,7 @@ function DemoScreen({ model, device, section }: { model: Model; device: Device; 
   );
 }
 
-function ModelPreview({ model, device }: { model: Model; device: Device }) {
+function ModelPreview({ model, device, onSelectModel }: { model: Model; device: Device; onSelectModel: (model: QuoteModel) => void }) {
   const [destination, setDestination] = useState({ section: "", revision: 0 });
   const screen = useRef<HTMLDivElement>(null);
 
@@ -116,7 +119,7 @@ function ModelPreview({ model, device }: { model: Model; device: Device }) {
           ))}
         </ul>
         <div className="mt-6 flex flex-wrap items-center gap-2 lg:flex-col lg:items-start">
-          <CommercialContact model={`Site ${model.label}`} className="whitespace-normal px-4 text-center">Quero o {model.label}</CommercialContact>
+          <CommercialContact onSelect={() => onSelectModel(model.quoteModel)} className="whitespace-normal px-4 text-center">Quero o {model.label}</CommercialContact>
           <Button asChild variant="ghost" className="whitespace-normal px-2 text-muted-foreground">
             <a href={model.url} target="_blank" rel="noopener noreferrer">Abrir demonstração<ExternalLink aria-hidden="true" /></a>
           </Button>
@@ -126,7 +129,7 @@ function ModelPreview({ model, device }: { model: Model; device: Device }) {
   );
 }
 
-export function CommercialShowcase() {
+export function CommercialShowcase({ onSelectModel }: { onSelectModel: (model: QuoteModel) => void }) {
   const [device, setDevice] = useState<Device>("desktop");
 
   useEffect(() => {
@@ -153,7 +156,7 @@ export function CommercialShowcase() {
         </TabsList>
         {models.map((model) => (
           <TabsContent key={model.id} value={model.id} className="mt-4">
-            <ModelPreview model={model} device={device} />
+            <ModelPreview model={model} device={device} onSelectModel={onSelectModel} />
           </TabsContent>
         ))}
       </Tabs>

@@ -10,3 +10,7 @@
 ## Interactive showroom
 - [x] Embed both demo models within the lawyer sites section, with desktop/mobile views and section shortcuts.
 - [x] Verify the preview and model-specific WhatsApp links on desktop and mobile.
+
+## Quote requests
+- [x] Add the commercial form and private storage before the WhatsApp handoff.
+- [x] Verify the browser handoff and read back a test request from storage.
