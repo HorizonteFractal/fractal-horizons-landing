@@ -22,12 +22,11 @@ export const Route = createFileRoute("/")({
     const title = "Horizonte Fractal | IA, Automação e Transformação Digital para Empresas";
     const description =
       "Aceleramos o crescimento de empresas com Inteligência Artificial, automação de processos, desenvolvimento de software sob medida e transformação digital.";
-    const url = "https://fractal-growth-engine.lovable.app/";
+    const url = "https://horizontefractal.com.br/";
     const image =
       "https://storage.googleapis.com/gpt-engineer-file-uploads/Qj4rx55C9NWoCCD3FSO3wFi1Bpk2/social-images/social-1780591805005-Banner_LinkedIn_1200x630_com_gradiente.webp";
     const keywords =
       "inteligência artificial, ia para empresas, automação de processos, desenvolvimento de software, transformação digital, agentes de ia, consultoria de tecnologia, crescimento empresarial, growth, campinas";
-
 
     return {
       meta: [
@@ -76,7 +75,7 @@ export const Route = createFileRoute("/")({
                 ],
                 contactPoint: {
                   "@type": "ContactPoint",
-                  telephone: "+55-19-99393-1841",
+                  telephone: "+55 11 91200-0583",
                   contactType: "customer service",
                   areaServed: "BR",
                   availableLanguage: ["Portuguese"],
@@ -135,19 +134,19 @@ function Index() {
       <main id="conteudo" className="relative min-h-dvh overflow-x-hidden">
         <Nav />
         <Hero />
-      <Tech />
-      <Tecnologias />
-      <Services />
-      <ComoTrabalhamos />
-      <Differentials />
-      <Process />
-      <Results />
-      <Projects />
-      <ProvaSocial />
-      <Testimonials />
-      <SupportPlans />
-      <PreCta />
-      <CtaFinal />
+        <Tech />
+        <Tecnologias />
+        <Services />
+        <ComoTrabalhamos />
+        <Differentials />
+        <Process />
+        <Results />
+        <Projects />
+        <ProvaSocial />
+        <Testimonials />
+        <SupportPlans />
+        <PreCta />
+        <CtaFinal />
         <Footer />
         <WhatsAppFloat />
       </main>
